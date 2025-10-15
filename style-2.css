@@ -1,0 +1,173 @@
+body {
+  font-family: 'Georgia', sans-serif;
+  background-color: #e9f7ef;
+  color: #1b4332;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.3;
+  filter: hue-rotate(80deg) saturate(1.2) brightness(1.1);
+}
+
+header {
+  background-color: rgba(224, 255, 238, 0.9);
+  text-align: right;
+  padding: 25px;
+  border-bottom: 7px solid #2d6a4f;
+  backdrop-filter: blur(4px);
+}
+
+h1 {
+  color: #2d6a4f;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #40916c;
+  text-align: center;
+  border-bottom: 2px solid #2d6a4f;
+}
+
+h3 {
+  text-align: center;
+}
+
+footer {
+  top: 2030px;
+  background-color: rgba(255, 255, 255, 0);
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  color: #000000;
+}
+
+.lista, .section_1, .section_3 {
+  position: absolute;
+  top: 225px;
+  margin: 0;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 3px 20px rgba(45,106,79,0.15), 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.lista {
+  left: 50px;
+  width: 42%;
+  height: 540px;
+  background-color: rgba(255, 255, 255, 0.6); 
+  border: 5px solid rgba(215, 216, 183, 0.6); 
+}
+
+.section_1 {
+  right: 50px;
+  width: 42%;
+  height: 540px;
+  background-color: rgba(200, 240, 255, 0.8);
+  border: 5px solid #8972f2;
+}
+
+.section_3 {
+  position: absolute;
+  top: 1700px;
+  left: 50px;
+  right: 50px;
+  height: 430px;
+  border: 5px solid #f9c74f;
+  background-color: rgba(251, 200, 138, 0.8);
+  border-radius: 25px;
+}
+
+.section_2 {
+  position: absolute;
+  top: 832px;
+  left: 50px;
+  right: 50px;
+  height: 750px;
+  background-color: rgba(149, 145, 155, 0.7); 
+  border: 5px solid rgba(255, 255, 255, 0.7); 
+  border-radius: 25px;            
+  padding: 25px;
+  margin: 25px auto;
+  color: #fff;                    
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.section_2 p {
+  text-align: center;
+}
+
+.section_2 h2 { 
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+.Mars, .Europa, .Enceladus {
+  position: absolute;
+}
+
+.Mars {
+  border: #3fa178 solid 5px;
+  top: 110px;
+  left: 50px;
+  width: 43%;
+  height: 310px;
+}
+
+.Europa {
+  border: #29684e solid 5px;
+  top: 110px;
+  right: 50px;
+  width: 43%;
+  height: 310px;
+}
+
+.Enceladus {
+  border: #378061 solid 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 495px;
+  width: 60%;
+  height: 245px;
+}
+
+@media (max-width: 1300px) {
+  .lista, .section_1, .section_3, .section_2 {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 15px;
+  }
+
+  .section_2 {
+    margin-top: 15px;
+  }
+
+  .Mars, .Europa, .Enceladus {
+    position: static;
+    width: 100%;
+    height: auto;
+    transform: none;
+    margin-top: 15px;
+  }
+
+  header {
+    top: 100%;
+    text-align: right;
+  }
+  footer {
+    top: 100%;
+    text-align: center;
+  }
+}
